@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita",
+    "ingredients": [
+      "tomatoes",
+      "mozzarella",
+      "basil",
+      "extra virgin olive oil"
+    ],
+    "price": 6,
+    "pic": "https://noseychef.com/wp-content/uploads/2017/08/pizza.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Marinara",
+    "ingredients": ["tomatoes", "garlic", "oregano", "extra virgin olive oil"],
+    "price": 3,
+    "pic": "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/02/m-evid-672x372.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Capricciosa",
+    "ingredients": [
+      "tomatoes",
+      "mozzarella",
+      "prosciutto",
+      "mushrooms",
+      "artichokes",
+      "olives"
+    ],
+    "price": 8,
+    "pic": "https://www.womenshealth.de/food/gesunde-rezepte/wp-content/uploads/2012/02/sh_Marzia-Giacobbe_172628543_Pizza-Capricciosa_Belag_Rezept_800x462.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Diavola",
+    "ingredients": ["tomatoes", "mozzarella", "tabasco", "spicy salami"],
+    "price": 3,
+    "pic": ""
+  }
+]
