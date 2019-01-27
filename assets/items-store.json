@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Margherita",
+    "name": "Pizza Margherita",
     "ingredients": [
       "tomatoes",
       "mozzarella",
@@ -13,14 +13,14 @@
   },
   {
     "id": 2,
-    "name": "Marinara",
+    "name": "Pizza Marinara",
     "ingredients": ["tomatoes", "garlic", "oregano", "extra virgin olive oil"],
     "price": 3,
     "pic": "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/02/m-evid-672x372.jpg"
   },
   {
     "id": 3,
-    "name": "Capricciosa",
+    "name": "Pizza Capricciosa",
     "ingredients": [
       "tomatoes",
       "mozzarella",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "name": "Diavola",
+    "name": "Pizza Diavola",
     "ingredients": ["tomatoes", "mozzarella", "tabasco", "spicy salami"],
     "price": 3,
     "pic": ""
