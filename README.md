@@ -14,7 +14,7 @@ This is a pure Node V8 REST API which prototypes a pizza-delivery-eCommerce serv
 
 ## Usage
 
-Please refer to the [API documentation](https://documenter.getpostman.com/view/549644/RztitVWC#eac781e0-3891-4e73-8c75-bc1ff5b722e6)
+Please refer to the [API documentation](https://documenter.getpostman.com/view/549644/RztitVWC)
 
 ## Development
 
@@ -80,4 +80,4 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## License
 
-[MIT](https://github.com/ugobriasco/gamma-pizza/blob/master/LICENSE.md)
+[MIT](https://github.com/ugobriasco/gamma-pizza/blob/master/LICENSE)
