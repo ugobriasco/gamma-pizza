@@ -38,10 +38,10 @@ vim ./lib/config.js
 bash ./scripts/init.js
 ```
 
-There are several way to start the application, here some of them:
+There are several ways to start the application, here some of them:
 
 ```bash
-# Start the application setting the environment (default stage)
+# Start the application, setting the environment parameter (default stage)
 NODE_ENV=production node .
 NODE_ENV=stage node .
 
