@@ -18,7 +18,7 @@ Please refer to the [API documentation](https://documenter.getpostman.com/view/5
 
 ## Development
 
-Gamma Pizza is DB-free service, meaning that all the data is saved to file system. Keep it in mind before to deploy this applicatio to a productive environment.
+Gamma Pizza is DB-free service, meaning that all the data is saved to file system. Keep it in mind before to deploy this application to a productive environment.
 
 ### Prerequisites
 
@@ -55,8 +55,14 @@ bash ./scripts/start.sh
 Access the REST API via:
 
 ```bash
+http://localhost:3000/api/v1.0
+https://localhost:3001/api/v1.0
+```
+
+Access the frontend via:
+
+```bash
 http://localhost:3000
-https://localhost:3001
 ```
 
 ### Test
@@ -64,6 +70,16 @@ https://localhost:3001
 tbd.
 
 ## Release Notes
+
+### Γ🍕 v0.1.0
+
+1. Simple frontend which supports the following scenarios
+
+- Users can signup and login
+- Authenticated users can view all the items available to order
+- Authenticated users ca fill up a shopping cart, place an order (with fake credit card credentials), and receive an email receipt.
+
+2. This is a PWA application which cashes assets offline for a better offline-first user experience
 
 ### Γ🍕 v0.0.0
 
