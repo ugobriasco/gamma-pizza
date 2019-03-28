@@ -1,12 +1,76 @@
-<div class="jumbotron jumbotron-fluid">
+<!-- Header -->
+<header class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Get a Γ🍕</h1>
-    <p class="lead">The best Pizza in Berlin since 2019.</p>
-    <hr class="my-4">
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Login</a>
-  </p>
+      <h1 class="display-4">Get a Γ🍕</h1>
+      <p class="lead">The best Pizza in Berlin since 2019.</p>
+      <hr class="my-4">
+      <p class="lead text-right">
+        <a class="btn btn-default btn-rounded" href="" data-toggle="modal" data-target="#modalLoginForm" role="button">Login</a>
+        <a class="btn btn-primary btn-rounded" href="" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign Up</a>
+      </p>
+  </div>
+</header>
+
+<!-- Login Modal -->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="LoginModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="pr-2 pt-2 mb-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form action="/login" method="post">
+          <div class="form-group">
+            <label for="LoginEmail" class="text-muted"><i class="fas fa-envelope prefix"></i> Your email</label>
+            <input type="email" class="form-control" id="LoginEmail" aria-describedby="emailHelp" name="email" placeholder="">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="LoginPassword"class="text-muted"><i class="fas fa-lock prefix grey-text"></i> Your password</label>
+            <input type="password" class="form-control" id="LoginPassword" name="password" placeholder="">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="SignupModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="pr-2 pt-2 mb-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form action="/signup" method="post" >
+          <div class="form-group">
+            <label for="SignupUserName" class="text-muted"><i class="fas fa-user prefix"></i> Your name</label>
+            <input type="text" class="form-control" id="SignupUserName" name="username">
+          </div>
+          <div class="form-group">
+            <label for="SignupEmail" class="text-muted"><i class="fas fa-envelope prefix"></i> Your email</label>
+            <input type="email" class="form-control" id="SignupEmail" name="email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="SignupPassword"class="text-muted"><i class="fas fa-lock prefix grey-text"></i> Your password</label>
+            <input type="password" class="form-control" id="SignupPassword" name="password">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

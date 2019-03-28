@@ -1,3 +1,112 @@
 <div class="container">
-  <h1>Our Pizza</h1>
+  <h1 class="title pt-4">Our Pizza</h1>
+  <div class="row">
+    <div class="col-sm-4 order-sm-12">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="shopping-cart">
+          <a href="" data-toggle="modal" data-target="#modalShoppingCart" role="button"><h1 class="display-4 text-center"><i class="fas fa-shopping-cart"></i>3</h1></a>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="orders">
+          <a href="" data-toggle="modal" data-target="#modalOrders" role="button"><h1 class="display-4 text-center"><i class="fas fa-truck"></i></h1></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm order-sm-1">
+      <div class="masonry-with-columns" id="products-catalog">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Shopping Cart Modal -->
+<div class="modal fade" id="modalShoppingCart" tabindex="-1" role="dialog" aria-labelledby="SignupModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="pr-2 pt-2 mb-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <h4>Shopping Cart</h4>
+        <table class="table">
+           <thead>
+             <tr>
+               <th>Name</th>
+               <th>Quantity</th>
+               <th>Bin</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Margherita</td>
+               <td>1</td>
+               <td><a href=""><i class="fas fa-trash"></i></a></td>
+             </tr>
+           </tbody>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Orders Modal -->
+<div class="modal fade" id="modalOrders" tabindex="-1" role="dialog" aria-labelledby="SignupModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="pr-2 pt-2 mb-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <h4>Your orders</h4>
+        <table class="table">
+           <thead>
+             <tr>
+               <th>Date</th>
+               <th>Status</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Feb 12 2019 10:30</td>
+               <td>Ready</td>
+             </tr>
+           </tbody>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Item Modal -->
+<div class="modal fade" id="modalOrders" tabindex="-1" role="dialog" aria-labelledby="SignupModal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="pr-2 pt-2 mb-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <h4>Pizza Margherita</h4>
+        <img src="" alt="">
+        <p>Pomodoro, Mozzarella, Olive</p>
+        <button type="button" name="button">Add to cart</button>
+      </div>
+    </div>
+  </div>
 </div>
