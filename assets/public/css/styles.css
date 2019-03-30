@@ -32,163 +32,173 @@ footer {
   width: 100%;
 }
 
+.clickable:hover,
+.clickable:focus {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.clickable:active {
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.product-card {
+  padding-top: 25%;
+  background-color: #ec985a;
+  color: white;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.product-card > .price {
+  font-size: 2rem;
+}
+.product-card > h2 {
+}
+
+.darken-pseudo {
+  position: relative;
+}
+
+.darken-pseudo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.darken-with-text h2,
+.darken-with-text p {
+  position: relative;
+  z-index: 1;
+}
+
+/*Masonry grid
+* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/
+*/
 .masonry-with-columns {
   columns: 6 200px;
   column-gap: 1rem;
 }
 .masonry-with-columns div {
-  width: 150px;
-  background: #ec985a;
-  color: white;
+  width: 146px;
+
   margin: 0 1rem 1rem 0;
   display: inline-block;
   width: 100%;
-  text-align: center;
-  font-family: system-ui;
-  font-weight: 900;
-  font-size: 2rem;
 }
-.masonry-with-columns div:nth-child(1) {
+/* .masonry-with-columns div:nth-child(1) {
   height: 224px;
-  line-height: 224px;
 }
 .masonry-with-columns div:nth-child(2) {
   height: 343px;
-  line-height: 343px;
 }
 .masonry-with-columns div:nth-child(3) {
   height: 376px;
-  line-height: 376px;
 }
 .masonry-with-columns div:nth-child(4) {
   height: 421px;
-  line-height: 421px;
 }
 .masonry-with-columns div:nth-child(5) {
   height: 282px;
-  line-height: 282px;
 }
 .masonry-with-columns div:nth-child(6) {
   height: 495px;
-  line-height: 495px;
 }
 .masonry-with-columns div:nth-child(7) {
   height: 176px;
-  line-height: 176px;
 }
 .masonry-with-columns div:nth-child(8) {
   height: 131px;
-  line-height: 131px;
 }
 .masonry-with-columns div:nth-child(9) {
   height: 238px;
-  line-height: 238px;
 }
 .masonry-with-columns div:nth-child(10) {
   height: 427px;
-  line-height: 427px;
 }
 .masonry-with-columns div:nth-child(11) {
   height: 151px;
-  line-height: 151px;
 }
 .masonry-with-columns div:nth-child(12) {
   height: 182px;
-  line-height: 182px;
 }
 .masonry-with-columns div:nth-child(13) {
   height: 292px;
-  line-height: 292px;
 }
 .masonry-with-columns div:nth-child(14) {
   height: 363px;
-  line-height: 363px;
 }
 .masonry-with-columns div:nth-child(15) {
   height: 219px;
-  line-height: 219px;
 }
 .masonry-with-columns div:nth-child(16) {
   height: 192px;
-  line-height: 192px;
 }
 .masonry-with-columns div:nth-child(17) {
   height: 262px;
-  line-height: 262px;
 }
 .masonry-with-columns div:nth-child(18) {
   height: 280px;
-  line-height: 280px;
 }
 .masonry-with-columns div:nth-child(19) {
   height: 304px;
-  line-height: 304px;
 }
 .masonry-with-columns div:nth-child(20) {
   height: 376px;
-  line-height: 376px;
 }
 .masonry-with-columns div:nth-child(21) {
   height: 107px;
-  line-height: 107px;
 }
 .masonry-with-columns div:nth-child(22) {
   height: 255px;
-  line-height: 255px;
 }
 .masonry-with-columns div:nth-child(23) {
   height: 192px;
-  line-height: 192px;
 }
 .masonry-with-columns div:nth-child(24) {
   height: 116px;
-  line-height: 116px;
 }
 .masonry-with-columns div:nth-child(25) {
   height: 136px;
-  line-height: 136px;
 }
 .masonry-with-columns div:nth-child(26) {
   height: 470px;
-  line-height: 470px;
 }
 .masonry-with-columns div:nth-child(27) {
   height: 216px;
-  line-height: 216px;
 }
 .masonry-with-columns div:nth-child(28) {
   height: 298px;
-  line-height: 298px;
 }
 .masonry-with-columns div:nth-child(29) {
   height: 451px;
-  line-height: 451px;
 }
 .masonry-with-columns div:nth-child(30) {
   height: 126px;
-  line-height: 126px;
 }
 .masonry-with-columns div:nth-child(31) {
   height: 295px;
-  line-height: 295px;
 }
 .masonry-with-columns div:nth-child(32) {
   height: 113px;
-  line-height: 113px;
 }
 .masonry-with-columns div:nth-child(33) {
   height: 170px;
-  line-height: 170px;
 }
 .masonry-with-columns div:nth-child(34) {
   height: 201px;
-  line-height: 201px;
 }
 .masonry-with-columns div:nth-child(35) {
   height: 167px;
-  line-height: 167px;
 }
 .masonry-with-columns div:nth-child(36) {
   height: 389px;
-  line-height: 389px;
-}
+} */
