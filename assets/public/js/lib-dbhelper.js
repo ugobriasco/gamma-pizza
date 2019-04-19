@@ -7,6 +7,9 @@ const HOST = "http://localhost:3000/api/v1.0";
 // TEMP:
 const localCatalog = [];
 
+// Utilities
+const accessToken = document.cookie.split("access_token=")[1];
+
 const dbHelper = {};
 
 dbHelper.checkConnectivity = () => {
@@ -25,7 +28,7 @@ dbHelper.fetchCatalog = () => {
     headers: {
       "content-type": "application/json",
       email: "fumaxuhog@onecitymail.com",
-      Authorization: "0vowwej144gkjyi1x3j6"
+      Authorization: accessToken
     }
   };
 
@@ -37,4 +40,18 @@ dbHelper.fetchCatalog = () => {
       console.log("cannot fetch from db");
       console.log(err);
     });
+};
+
+dbHelper.login = props => {
+  const { email, password } = props;
+
+  const options = {
+    method: "post",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({ email, password })
+  };
+
+  return fetch(`${HOST}/login`, options).then(res => res.json());
 };
